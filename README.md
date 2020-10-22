@@ -46,6 +46,7 @@ Burger Lounge is an interactive burger logger. It allows the user to add a burge
 ## Deployed Link
 
 * [See Live Site](https://ajhuff7.github.io/burger_lounge/)
+* [See Live Site](https://young-ocean-02392.herokuapp.com/)
 
 ---
 
