@@ -11,7 +11,7 @@ Burger Lounge is an interactive burger logger. It allows the user to add a burge
 * [Features](#features)
 * [Deployed_Link](#deployed_link)
 * [Author](#author)
-* [Credits](#credits)git push 
+* [Credits](#credits)
 * [License](#license)
 
 ----
