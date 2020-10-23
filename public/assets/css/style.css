@@ -1,10 +1,12 @@
-
 .body {
-    background-color: rgb(255, 111, 0)
+  background: url(https://www.nydailynews.com/resizer/YcMPKvk3zjkqKpT7_bdWJ05eypo=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/MKD3KCXKWJAMXAFBHZP6XWRNAI.jpg) center center no-repeat;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
 }
-  
-  .jumbotron {
-    text-align: center;
-    bg-warning;
 
-  }
+
+.jumbotron {
+  text-align: center;
+
+}

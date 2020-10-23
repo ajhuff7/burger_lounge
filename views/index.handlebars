@@ -1,10 +1,10 @@
-<div class="jumbotron bg-warning">
-  <h1 class="display-4">Welcome to the BURGER LOUNGE!</h1>
+<div class="jumbotron bg-transparent">
+  <h1 class="display-4 text-warning">Welcome to the BURGER LOUNGE!</h1>
 
-  <div class="container-fluid bg-transparent">
+  <div class="container-fluid bg-warning rounded-circle">
     <div class="row">
       <div class="col col-lg-4">
-        <div class="card-body">
+        <div class="card-body border border-success rounded">
         <h2>CREATE YOUR BURGER HERE!!</h2>
         <form class="create-form" action="/api/burgers" method="POST">
 
@@ -19,7 +19,7 @@
             <input type="radio" name="devoured" value="0"> COOK IT!
           </div>
 
-          <button class="btn btn-info btn-lg" type="submit">Add Burger!</button>
+          <button class="btn btn-success btn-lg" type="submit">Add Burger!</button>
         </form>
         </div>
       </div>
@@ -49,7 +49,4 @@
       </div>
     </div>
   </div>
-</div>
-<div class="container-fluid bg-transparent w-100 h-100">
-  <img class="img w-100 h-100 alt="tri-burgers" src="/public/assets/img/unnamed.png"/>
 </div>
