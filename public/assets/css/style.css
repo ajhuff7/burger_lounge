@@ -1,0 +1,9 @@
+
+.body {
+    background: url(public/assets/img/3-delicious-burgers-with-different-fillings-wooden-black-table-pineapple-burger-with-mushrooms-melted-cheddar-cheese-set-hamburger-appetizing_207126-184.jpg) center center no-repeat;
+  }
+  
+  .jumbotron {
+    text-align: center;
+    border-color: bg-transparent;
+  }
