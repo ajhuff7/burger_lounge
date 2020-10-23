@@ -1,4 +1,4 @@
-# burger_lounge
+# Burger Lounge
 
 Burger Lounge is an interactive burger logger. It allows the user to add a burger's name to the database, store the data in a holding area, and click a button to consume the burger, moving the object to a "devoured" area.
 
@@ -11,7 +11,7 @@ Burger Lounge is an interactive burger logger. It allows the user to add a burge
 * [Features](#features)
 * [Deployed_Link](#deployed_link)
 * [Author](#author)
-* [Credits](#credits)
+* [Credits](#credits)git push 
 * [License](#license)
 
 ----
