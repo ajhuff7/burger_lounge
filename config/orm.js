@@ -87,25 +87,25 @@ function printQuestionMarks(num) {
   
         cb(result);
       });
-    }
+    },
   
-    // delete: function(table, objColVals, condition, cb) {
-    //     var queryString = "DELETE " + table;
+    delete: function(table, objColVals, cb) {
+        var queryString = "DELETE ";
     
-    //     queryString += " SET ";
-    //     queryString += objToSql(objColVals);
-    //     queryString += " WHERE ";
-    //     queryString += condition;
+        queryString += " FROM ";
+        queryString += table;
+        queryString += " WHERE ";
+        queryString += objToSql(objColVals);
+       
+        console.log(queryString);
+        connection.query(queryString, function(err, result) {
+          if (err) {
+            throw err;
+          }
     
-    //     console.log(queryString);
-    //     connection.query(queryString, function(err, result) {
-    //       if (err) {
-    //         throw err;
-    //       }
-    
-    //       cb(result);
-    //     });
-    //   }
+          cb(result);
+        });
+      }
 
 
   };

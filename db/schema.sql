@@ -1,10 +1,14 @@
-USE qgedzymcit7tqced;
+DROP DATABASE IF EXISTS burgers_db;
 
-CREATE TABLE burgers (
-id INT AUTO_INCREMENT NOT NULL, 
-description VARCHAR(255),
-createAt TIMESTAMP NOT NULL,
-PRIMARY KEY(id)
+CREATE DATABASE burgers_db;
+
+USE burgers_db;
+
+CREATE TABLE burgers
+(
+	id int NOT NULL AUTO_INCREMENT,
+	burger_name varchar(40) NOT NULL,
+    devoured BOOLEAN, 
+	PRIMARY KEY (id)
 );
 
-UPDATE burgers SET createAt = current_timestamp

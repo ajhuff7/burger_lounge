@@ -1,38 +1,39 @@
-<h1>Burger Lounge!</h1>
+<h1>Welcome to the BURGER LOUNGE!</h1>
 
-<h2>These burgers look tasty!!</h2>
+<h2>Cooked Burgers ready to DEVOUR!!</h2>
 
 <ul>
   {{#each burgers}}
     {{#unless devoured}}
-      {{> burgers/burger-block sleep=true}}
+      {{> burger-block eat=true}}
     {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Where burgers get DEVOURED!!</h2>
+<h2>What Burger would you like to order?!</h2>
 
 <ul>
   {{#each burgers}}
     {{#if devoured}}
-      {{> burgers/burger-block sleep=false}}
+      {{> burger-block eat=false}}
     {{/if}}
   {{/each}}
 </ul>
 
-<h2>What burger would you like?</h2>
-<form class="create-form">
+<h2>Create YOUR Burger HERE!</h2>
+<form class="create-form" action="/api/burgers" method="POST">
 
   <div class="form-group">
     <label for="ca">Burger Name:</label>
-    <input type="text" id="ca" name="burger_name">
+    <input required type="text" id="ca" name="burger_name">
   </div>
 
   <div class="form-group">
     <label for="slee">Hungry?</label><br>
-    <input type="radio" name="devoured" value="1" checked> Sleepy!<br>
-    <input type="radio" name="devoured" value="0"> Awake
+    <input type="radio" name="devoured" value="1" checked> Devoured!<br>
+    <input type="radio" name="devoured" value="0"> Hungry
   </div>
 
   <button type="submit">Add Burger!</button>
 </form>
+
